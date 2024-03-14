@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Waveform Player</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/4.2.0/wavesurfer.min.js"></script>
+  <script src="waveform.js" defer></script>
+  <style>
+    #waveform-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #waveform {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="waveform-container">
+    <div id="waveform"></div>
+  </div>
+  <audio id="audio" src="audio.mp3" controls></audio>
+</body>
+</html>
